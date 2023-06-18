@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
     <meta charset="UTF-8">
     <title>Leaders Home Page</title>
 </head>
 <body>
 
-<h2>Leaders Home Page</h2>
+<h2 class="text-center bg-warning px-3 py-3 fw-bold">Leaders Home Page</h2>
 
 <hr>
 
-<p>
-    The ext trip is to Brazil.
+<p class="px-5">
+    <span class="fw-normal mt-2 mb-2">Here is the small secret for you...</span> <br> <br>
+    The next trip is to Brazil.
     <br>
     Don't tell anyone.:-)
 </p>
 
-<a th:href="@{/}">Back to Home</a>
+<div class="px-5">
+<a th:href="@{/}" class="btn btn-outline-primary mt-5">Back to Home</a>
+</div>
 
 </body>
 </html>
